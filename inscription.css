@@ -1,0 +1,48 @@
+* {
+	box-sizing:border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.8rem; /* on remets la taille du texte par défaut pour le body à 18px en utilisant les rem comme unité) */
+    margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+header {
+    margin: 0 1em 0 1em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+header img {
+    width:75%;
+}
+nav {
+    width:125%;
+}
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+main {
+    background-image: url("https://laplateforme.io/wp-content/uploads/2023/03/brochure-bkg.webp");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+
+    /*padding:em;*/
+}
+section {
+    width:40%;
+}
