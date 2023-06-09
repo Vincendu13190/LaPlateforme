@@ -13,18 +13,8 @@
             <div>
                 <img class="logolaplateforme" src="https://laplateforme.io/wp-content/uploads/2021/07/logo_laplateforme_bleu3.png" alt="Ecole La Plateforme">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Qui sommes-nous ?<a></li>
-                    <li><a href="#">Cursus</a></li>
-                    <li><a href="#">Spécialisation</a></li>
-                    <li><a href="#">Entreprise</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Français</a></li>
-                </ul>
-            </nav>
+            <?php require_once "nav.php"; ?>
+            
         </header>
         <main>
             <section>
