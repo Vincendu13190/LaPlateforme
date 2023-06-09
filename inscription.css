@@ -11,6 +11,7 @@ body {
     margin: 0;
 	padding: 0;
 	line-height: 1.5;
+    font-family: Open Sans,Arial,sans-serif;
 }
 
 header {
@@ -34,15 +35,113 @@ nav>ul {
 nav ul {
     list-style-type: none;
 }
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.6);
+    font-size:1.4rem;
+}
+nav ul li a:hover {
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+}
 main {
     background-image: url("https://laplateforme.io/wp-content/uploads/2023/03/brochure-bkg.webp");
     background-position: center;
     background-size: cover;
     display:flex;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    padding-bottom: 3em;
+    padding-top: 1em;
     /*padding:em;*/
 }
 section {
     width:40%;
+}
+section img {
+    width: 100%;
+}
+.leftitle {
+    color: #ff6600;
+    font-size:1.7rem;
+    font-weight: bold;
+    font-family: 'Roboto Regular',Helvetica,Arial,Lucida,sans-serif
+}
+section:first-of-type p {
+    color:white;
+}
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:1em;
+    border-radius:1em;
+}
+section:last-of-type form {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.rightitle {
+    text-align: center;
+}
+section form .obligation {
+    font-size:1.15rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+section form div label {
+    font-size:1.3rem;
+    font-weight: none;
+    opacity: 0.9;
+}
+select, input, textarea {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 1rem;
+    margin: 0.1rem;
+    font-family: Open Sans, Arial, sans-serif;
+    opacity: 0.9;
+}
+input::placeholder, textarea::placeholder {
+    color:black;
+}
+select:focus, input:focus, textarea:focus {
+    outline:  none;
+}
+.name {
+    display:flex;
+}
+.contact {
+    display:flex;
+}
+.lieu {
+    display:flex;
+}
+.name input, .name select {
+    flex-grow:1;
+}
+.contact input {
+    flex-grow:1;
+}
+.lieu input {
+    flex-grow:1;
+}
+
+textarea[name="motivationalswords"] {
+    resize:vertical;
+    min-height: 5rem;
+    max-height: 50rem;
+}
+
+.envoyer {
+    border-radius: 10rem;
+    background-color: #fe6b26;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+}
+footer{
+    background-color: #313131;
 }

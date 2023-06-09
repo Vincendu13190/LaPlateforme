@@ -25,8 +25,8 @@
             <section>
                 <h2 class="rightitle">Choisissez votre projet de formation</h2>
                 <form action="/my-handling-form-page" method="post">
-                    <label for="obligation">« * » indique les champs nécessaires</label>
-                    <div>
+                    <label for="obligation" class="obligation">« * » indique les champs nécessaires</label>
+                    <div class="name">
                         <select name="alias" id="alias-select">
                             <option value="prefix">Prefixe</option>
                             <option value="monsieur">Mr</option>
@@ -36,13 +36,13 @@
                         <input type="text" placeholder="Prénom*" id="prenom">
                         <input type="text" placeholder="Nom*" id="nom">
                     </div>
-                    <div>
+                    <div class="contact">
                         <input type="text" placeholder="Email*" id="email">
                         <input type="text" placeholder="Téléphone Mobile*" id="telmobile">
                     </div>
-                    <div>
+                    <div class="lieu">
                         <input type="text" placeholder="Ville*" id="ville">
-                        <input type="text" placeholder="Code Postal" id="codepostal">
+                        <input type="text" placeholder="Code Postal*" id="codepostal">
                     </div>
                     <select name="pays" id="pays-select">
                         <option value="prefix">Pays*</option>
